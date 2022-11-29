@@ -1,4 +1,60 @@
-  ;; ascii codes for registers
+;;; emacs-harpoon.el --- Rapid quick switching tool for buffers and files -*- lexical-binding: t; -*-
+
+;; Copyright (C) 2022-2033 Tyler Mayes
+
+;; Author: Tyler Mayes <timmymayes@gmail.com>
+;; Version 0.1
+;; Keywords: convenience frames 
+;; Homepage: https://github.com/Timmymayes/emacs-harpoon
+;; Package-Requires: ((emacs "27"))
+;; This program is free software; you can redistribute it and/or modify
+;; it under the terms of the GNU General Public License as published by
+;; the Free Software Foundation, either version 3 of the License, or
+;; (at your option) any later version.
+
+;; This program is distributed in the hope that it will be useful,
+;; but WITHOUT ANY WARRANTY; without even the implied warranty of
+;; MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+;; GNU General Public License for more details.
+
+;; You should have received a copy of the GNU General Public License
+;; along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
+;;; Commentary:
+
+;; This package works to merge marks and registers and/or bookmarks for quick file navigation.
+
+;; It should hopefully evolve over time but for now comes with some restrictive setup as I learn
+;; elisp and figure out what features I want the program to have.
+
+;; For now the package utilizes registers a-f for quick switching.
+
+;; There is a set of functions for setting harpoons in files and buffers and another set for
+;; activating harpoons.
+
+;; By default I have set these to:
+
+;; Jump to active harpoons
+;; 'H-a'  
+;; 'H-s' 
+;; 'H-d'  
+;; 'H-f' 
+
+;; Set new harpoons
+;; 'H-s-a'
+;; 'H-s-s'
+;; 'H-s-d'
+;; 'H-s-f'
+
+;; Minimum improvements I hope to make:
+;; 1. Incorporating bookmark option in addition to registers. Thanks Gavinok.
+;; 2. Integration with Project.el and Projectile.el for profile persistent and independant saving
+;; 3. Incorporate a proper key-map
+
+
+;;; Code:
+
+;; ascii codes for registers for
   ;; a = 97
   ;; s = 115
   ;; d = 100
@@ -75,3 +131,4 @@
   (global-set-key (kbd "H-s-d") 'set-harpoon-d)
   (global-set-key (kbd "H-f") 'harpoon-f)
   (global-set-key (kbd "H-s-f") 'set-harpoon-f)
+;;; emacs-harpoon.el ends here

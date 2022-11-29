@@ -1,1 +1,5 @@
 * An attempt at making harpoon in emacs.
+Inspired by [[https://github.com/ThePrimeagen/harpoon][harpoon]] created by Theprimeagen
+
+* This is a work in progress and my first package
+
