@@ -3,3 +3,5 @@ Inspired by [[https://github.com/ThePrimeagen/harpoon][harpoon]] created by Thep
 
 * This is a work in progress and my first package
 
+* Note
+- Binding currently is setup using global-set-key so be sure to change the keys to your own preference. They are defaulted with Hyper and Hyper-super so many users will likely have no conflicts. 
